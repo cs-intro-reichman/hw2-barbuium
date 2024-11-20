@@ -3,7 +3,6 @@ public class TimeCalc {
 
                 String time = args[0]; 
                 int minutesToAdd = Integer.parseInt(args[1]);
-                 
                  String[] timeParts = time.split(":");
                  int hours = Integer.parseInt(timeParts[0]);
                  int minutes = Integer.parseInt(timeParts[1]);
