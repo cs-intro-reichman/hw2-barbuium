@@ -6,14 +6,12 @@ public class CalcPi {
 		
 				for (int i = 0; i < numTerms; i++) {
 					double denominator = 2 * i + 1;
-		
 					if (i % 2 == 0) {
 						piApproximation += 1 / denominator;
 					} else {
 						piApproximation -= 1 / denominator;
 					}
 				}
-		
 				piApproximation *= 4;
 				System.out.println("pi according to Java: " + Math.PI);
 				System.out.println("pi, approximated: " + piApproximation);		
