@@ -12,22 +12,7 @@ public class TimeCalc {
                 int newHours = (totalMinutes / 60) % 24;  
                 int newMinutes = totalMinutes % 60;  
          
-                if (newHours > 12) {
-                        newHours -= 12;
-                      }
-                String formattedHours;
-                      if (newMinutes < 10) {
-                         formattedHours = "0" + newHours;
-                        } else {
-                            formattedHours = String.valueOf(newHours); 
-                        }
-        
-                String formattedMinute;
-                      if (newMinutes < 10) {
-                          formattedMinute = "0" + newMinutes;  
-                      } else {
-                          formattedMinute = String.valueOf(newMinutes); 
-                      }
-                      System.out.println(formattedHours + ":" + formattedMinute);
+                String formattedTime = String.format("%02d:%02d", newHours, newMinutes);
+                System.out.println(formattedTime);
     }
 }
