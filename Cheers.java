@@ -2,7 +2,8 @@
 public class Cheers {
         public static void main(String[] args) {
             String inputString = args[0].toUpperCase();  
-                   int numCheers = Integer.parseInt(args[1]);           
+                   int numCheers = Integer.parseInt(args[1]);
+                    
                  String specialLetters = "AEFHILMNORSX";
                   for (int i = 0; i < inputString.length(); i++) {
                     char letter = inputString.charAt(i); 
